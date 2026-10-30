@@ -6,10 +6,10 @@ Sagar, Jiho Han, Miles Cranmer, and Akshay Rao (NeurIPS 2026 Workshop:
 Sim2Science: ML with Imperfect Scientific Models;
 [OpenReview](https://openreview.net/forum?id=2HYHoXLdIi)).
 
-The study evaluates learned video emulators on operando interferometric
-scattering microscopy. Image intensity is treated as an uncalibrated optical
-measurement. It is not interpreted as concentration, stoichiometry, phase,
-diffusivity, transport, or mechanism.
+The study evaluates learned video emulators on movies recorded by charge
+photometry, an operando optical scattering microscopy method. Image intensity
+is treated as an uncalibrated optical measurement. It is not interpreted as
+concentration, stoichiometry, phase, diffusivity, transport, or mechanism.
 
 ## Quick start
 
