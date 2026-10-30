@@ -1,10 +1,31 @@
 cff-version: 1.2.0
-message: "During double-blind review, cite this artifact using the anonymous entry below."
+message: "If you use these data or this code, please cite the paper below."
 title: "Data and code for evaluating learned emulators of operando microscopy"
 type: dataset
 authors:
-  - family-names: "Authors"
-    given-names: "Anonymous"
+  - family-names: "Sagar"
+    given-names: "Nidhish"
+  - family-names: "Han"
+    given-names: "Jiho"
+  - family-names: "Cranmer"
+    given-names: "Miles"
+  - family-names: "Rao"
+    given-names: "Akshay"
 year: 2026
 license: CC-BY-4.0
-repository-code: "https://anonymous.4open.science/r/anonymous-review-artifact-2026-A03A/"
+repository-code: "https://github.com/sagarnidhish/sim2science-2026-operando"
+preferred-citation:
+  type: conference-paper
+  title: "Evaluating Next-Frame Predictions, Long-Term Predictions, and Protocol Timing in Operando Microscopy"
+  authors:
+    - family-names: "Sagar"
+      given-names: "Nidhish"
+    - family-names: "Han"
+      given-names: "Jiho"
+    - family-names: "Cranmer"
+      given-names: "Miles"
+    - family-names: "Rao"
+      given-names: "Akshay"
+  collection-title: "NeurIPS 2026 Workshop: Sim2Science: ML with Imperfect Scientific Models"
+  year: 2026
+  url: "https://openreview.net/forum?id=2HYHoXLdIi"

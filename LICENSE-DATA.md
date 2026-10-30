@@ -6,9 +6,8 @@ International License (CC BY 4.0):
 
 https://creativecommons.org/licenses/by/4.0/
 
-During double-blind review, attribute the data to "Anonymous Authors (2026)"
-and cite this repository. Author names and the final archival citation can be
-added after review.
+Attribute the data to Sagar, Han, Cranmer, and Rao (2026) and cite the paper
+listed in `CITATION.cff`.
 
 This license does not apply to third-party software. Code in this repository is
 licensed separately under `LICENSE-CODE`.

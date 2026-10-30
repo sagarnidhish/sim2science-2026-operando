@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Download, verify, and decompress the anonymous source-data release."""
+"""Download, verify, and decompress the source-data release."""
 
 from __future__ import annotations
 
@@ -16,8 +16,8 @@ CHECKSUM_FILE = REPOSITORY_ROOT / "data" / "SHA256SUMS"
 DEFAULT_SOURCE_DIR = REPOSITORY_ROOT / "data" / "source"
 DEFAULT_OUTPUT_DIR = REPOSITORY_ROOT / "data" / "source_uncompressed"
 BASE_URL = (
-    "https://anonymous.4open.science/api/repo/"
-    "anonymous-review-artifact-2026-A03A/file/data/source"
+    "https://media.githubusercontent.com/media/"
+    "sagarnidhish/sim2science-2026-operando/main/data/source"
 )
 
 
@@ -80,7 +80,7 @@ def download(source_dir: Path, expected: list[tuple[str, str]]) -> None:
             continue
         if destination.exists():
             print(f"Replacing Git LFS pointer or incomplete file: {filename}")
-        url = f"{BASE_URL}/{filename}?download=true"
+        url = f"{BASE_URL}/{filename}"
         partial = destination.with_suffix(destination.suffix + ".part")
         print(f"Downloading {filename}")
         partial.unlink(missing_ok=True)
@@ -154,7 +154,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--download", action="store_true",
-        help="Download missing archives from the anonymous mirror",
+        help="Download missing archives from the GitHub repository",
     )
     parser.add_argument(
         "--verify", action="store_true",
